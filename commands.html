@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JwngBot - Commands</title>
+<link rel="stylesheet" href="css/webstyle.css"> <link rel="stylesheet" href="css/commands.css">
+</head>
+<body>
+
+<div class="topbar">
+   <div class="dots" onclick="openMenu()">&#9776</div>
+   <img src="images/logo.png" class="logo">
+   <h3>Jwngbot</h3>
+</div>
+
+<div id="sideMenu" class="sidemenu">
+  <span class="closebtn" onclick="closeMenu()">&times;</span>
+    <p style="text-align:center; background:#14151A; padding: 12px 24px; font-size:16px; font-weight:bold; margin-bottom: 1px">Main</p>
+    <a href="index.html"  style="margin-top: 0px">Home</a>
+    <a href="commands.html">Commands</a>
+    <a href="faq.html">FAQ</a>
+
+    <p style="text-align:center; background:#14151A; padding: 12px 24px; font-size:16px; font-weight:bold; margin-bottom: 1px">Community</p>
+    <a href="announcement.html">Announcement</a>
+    <a href="changes.html">Change Logs/Updates</a>
+  </div>
+
+<header></header>
+<div class="search-container">
+    <input type="text" id="commandSearch" onkeyup="searchCommands()" placeholder="Search for a command...">
+
+<section style="max-width:95%">
+
+  <div class="commands-grid" id="commandsList">
+
+    <div class="command-card ">
+      <div class="command-syntax">/autonsfw start [tsource] [category] (interval) (channel)</div>
+      <p class="command-desc">Starts the bot's automatic posting of NSFW content in the server.</p>
+    </div>
+
+    <div class="command-card ">
+      <div class="command-syntax">/autonsfw stop</div>
+      <p class="command-desc">Stop the bot from automactically posting NSFW contents in the server.</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/futa</div>
+      <p class="command-desc">Displays 5 random futa hentai content.</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/gelbooru [tag] (amount)</div>
+      <p class="command-desc">Search any category/theme/character nsfw anime content from gelbooru.com</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/highres</div>
+      <p class="command-desc">Displays 5 random high-resolution, high-rated hentai images/videos/gifs.</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/milf</div>
+      <p class="command-desc">Fetches upto 5 random explicit hentai contents featuring a mature women.</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/r34lib (page)</div>
+      <p class="command-desc">Displays a random nsfw anime images from the bot collection. Over 1750+ items.</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/realbooru [tag]</div>
+      <p class="command-desc">Displays real-life NSFW content straight from realbooru.com</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/rule34 [tags] (amount)</div>
+      <p class="command-desc">Search any category/theme/character nsfw anime content from rule34.xxx</p>
+    </div>
+
+    <div class="command-card utility">
+      <div class="command-syntax">/vote</div>
+      <p class="command-desc">Vote me on topgg to access some exclusive perks.</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/xbooru [tag]</div>
+      <p class="command-desc">Displays anime NSFW content straight from xbooru.com</p>
+    </div>
+
+    <div class="command-card nsfw">
+      <div class="command-syntax">/yaoi</div>
+      <p class="command-desc">Fetches upto 5 randomexplicit male x male hentai contents.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p><a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+  <p>© 2025 JwngBot. All Rights Reserved.</p>
+  <a href="https://discord.gg/49S4nPakbF" target="_blank"> <img src="images/discord.png" style="width:20px; height:15px;"> </a>
+  <a href="https://top.gg/bot/1373562741314551900/vote" style="margin-left:7px"> <img src="images/topgg.png" style="width:20px"> </a>
+</footer>
+
+<script>
+
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+
+function toggleLegacy() {
+  const submenu = document.getElementById("legacySubmenu");
+  submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+}
+
+function searchCommands() {
+  let input = document.getElementById("commandSearch").value.toLowerCase();
+  let cards = document.querySelectorAll(".command-card");
+  cards.forEach(card => {
+    let text = card.innerText.toLowerCase();
+    card.style.display = text.includes(input) ? "" : "none";
+  });
+}
+
+</script>
+
+</body>
+</html>
