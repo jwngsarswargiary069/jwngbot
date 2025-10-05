@@ -1,0 +1,77 @@
+  .search-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  #commandSearch {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: #1E1E23;
+    color: white;
+    font-size: 1em;
+  }
+
+  .category-buttons {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .category-buttons button {
+    margin: 5px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #406BFD;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+
+  .category-buttons button:hover {
+    background: #2858FD;
+  }
+
+  .commands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .command-card {
+    background: #1E1E23;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 12px 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .command-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  }
+
+  .command-syntax {
+    display: inline-block;
+    background: #242427;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    color: #58a6ff;
+    margin-bottom: 8px;
+  }
+
+  .command-desc {
+    font-size: 0.9em;
+    color: #bbb;
+    line-height: 1.4;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+  }
