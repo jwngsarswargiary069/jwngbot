@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JwngBot - FAQ</title>
+<link rel="stylesheet" href="css/webstyle.css"> <link rel="stylesheet" href="css/cards2.css">  <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+
+<div class="topbar">
+   <div class="dots" onclick="openMenu()">&#9776</div>
+   <img src="images/logo.png" class="logo">
+   <h3>Jwngbot</h3>
+</div>
+
+<div id="sideMenu" class="sidemenu">
+  <span class="closebtn" onclick="closeMenu()">&times;</span>
+    <p style="text-align:center; background:#14151A; padding: 12px 24px; font-size:16px; font-weight:bold; margin-bottom: 1px">Main</p>
+    <a href="index.html"  style="margin-top: 0px">Home</a>
+    <a href="commands.html">Commands</a>
+    <a href="faq.html">FAQ</a>
+
+    <p style="text-align:center; background:#14151A; padding: 12px 24px; font-size:16px; font-weight:bold; margin-bottom: 1px">Community</p>
+    <a href="announcement.html">Announcement</a>
+    <a href="changes.html">Change Logs/Updates</a>
+  </div>
+
+<header>
+  <h2>Frequently Asked Questions</h2>
+  <p style="font-size:13px">Common issues & solutions</p>
+</header>
+
+<div class="container" style="max-width: 90%">
+  <section class="faq">
+
+    <details>
+      <summary>Why do some images fail to load?</summary>
+      <p>The source website may have removed or restricted the file. Try different tags — the bot automatically skips unavailable posts.</p>
+    </details>
+
+    <details>
+      <summary>Why is the same image repeating?</summary>
+      <p>Certain tags have limited results. Use broader or more active tags for better variety.</p>
+    </details>
+
+    <details>
+      <summary>Why is the bot responding slowly?</summary>
+      <p>Image providers throttle requests during busy hours. The bot queues requests to avoid rate limits.</p>
+    </details>
+
+    <details>
+      <summary>Why does it say "no results found"?</summary>
+      <p>The tag may be too specific or spelled differently. Try simpler keywords.</p>
+    </details>
+
+    <details>
+      <summary>Can I run multiple auto-feed channels?</summary>
+      <p>No.</p>
+    </details>
+
+    <details>
+      <summary>Does the bot work in Direct Messages?</summary>
+      <p>Yes.</p>
+    </details>
+
+    <details>
+      <summary>Why isn’t a command responding?</summary>
+      <p>Make sure the channel allows embedded links and images, and the bot has the reqired permission.</p>
+    </details>
+
+    <details>
+      <summary>How do I stop the auto-posting feed?</summary>
+      <p>Use /autofeed disable in that channel. It will stop instantly.</p>
+    </details>
+
+    <details>
+      <summary>Is it really free? Are there paid features later?</summary>
+      <p>Everything is permanently free. No premium tiers, no subscription traps.</p>
+    </details>
+
+    <details>
+      <summary>What content sources does the bot use?</summary>
+      <p>Images are fetched from publicly available third-party websites such as Rule34.xxx and Gelbooru.</p>
+    </details>
+
+    <details>
+      <summary>Do I need to vote to access features?</summary>
+      <p>Voting unlocks refresh buttons and bonus tags, but core features remain accessible to everyone.</p>
+    </details>
+
+    <details>
+      <summary>Can I request new categories or features?</summary>
+      <p>Yes. Use /suggest and it will be reviewed.</p>
+    </details>
+
+  </section>
+</div>
+<footer>
+  <p><a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+  <p style="margin-top:25px">© 2025 JwngBot. All Rights Reserved.</p>
+  <a href="https://discord.gg/49S4nPakbF"> <img src="images/discord.png" style="width:20px"> </a> 
+  <a href="https://top.gg/bot/1373562741314551900/vote" style="margin-left:7px"> <img src="images/topgg.png" style="width:20px"> </a>
+</footer>
+
+<script>
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+
+function toggleLegacy() {
+  const submenu = document.getElementById("legacySubmenu");
+  submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

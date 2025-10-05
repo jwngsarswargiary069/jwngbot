@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JwngBot - Privacy Policy</title>
+<link rel="stylesheet" href="css/webstyle.css">
+</head>
+<body>
+
+<div class="topbar">
+   <div class="dots" onclick="openMenu()">&#9776</div>
+   <img src="images/logo.png" class="logo">
+   <h3>Jwngbot</h3>
+</div>
+
+<div id="sideMenu" class="sidemenu">
+  <span class="closebtn" onclick="closeMenu()">&times;</span>
+    <p style="text-align:center; background:#14151A; padding: 12px 24px; font-size:16px; font-weight:bold; margin-bottom: 1px">Main</p>
+    <a href="index.html"  style="margin-top: 0px">Home</a>
+    <a href="commands.html">Commands</a>
+    <a href="faq.html">FAQ</a>
+
+    <p style="text-align:center; background:#14151A; padding: 12px 24px; font-size:16px; font-weight:bold; margin-bottom: 1px">Community</p>
+    <a href="announcement.html">Announcement</a>
+    <a href="changes.html">Change Logs/Updates</a>
+  </div>
+
+<header>
+  <h2>Privacy Policy</h2>
+  <p style="font-size:15px">By using JwngBot, you agree to this Privacy Policy.</p>
+  <p style="font-size:13px">Last Updated: 5 October 2025, 11:30 IST</p>
+</header>
+
+<section>
+
+  <h3>1. Data Collected</h3>
+<p>The bot only stores minimal information necessary for safety and functionality:</p>
+   <ul style="list-style:disc;margin-left:20px; margin-top:3px">
+    <li>Server ID — Stored only if autonsfw feature is enabled</li>
+    <li>Channel ID — Stores exclusively to remember which channel AutoNSFW should post in</li>
+    <li>Webhook URL — Stored to post nsfw content</li>
+    <li>Restricted Command Logs (only when prohibited terms are used)  — Logged only when users attempt disallowed terms, such as underage content or illegal requests, strictly for moderation and report purposes</li>
+    <li>Vote Logs (User ID + Timestamp) — Rewarding users for voting</li>
+  </ul>
+
+<p>The Bot does not log or store normal command usage and never records general chat messages.</p>
+
+<span style="display:flex; margin: 25px auto; border-bottom:2.5px solid #242427;"></span>
+
+  <h3>2. Third-Party Services</h3>
+<p>The Bot retrieves media from:</p>
+   <ul style="list-style:disc;margin-left:20px; margin-top:3px">
+    <li>Gelbooru</li>
+    <li>Realbooru</li>
+    <li>Xbooru</li>
+    <li>Rule34.xxx</li>
+   </ul>
+<p>Requests to these services are made through a private backend account, not through the user’s Discord account.
+This means your identity is never exposed to any third-party API.</p>
+
+<span style="display:flex; margin: 25px auto; border-bottom:2.5px solid #242427;"></span>
+
+  <h3>3. Data Usage</h3>
+<p>Collected data is used for:</p>
+   <ul style="list-style:disc;margin-left:20px; margin-top:3px">
+    <li>Delivering automated content (via autonsfw)</li>
+    <li>Preventing abuse or exploitation</li>
+    <li>Tracking votes to apply perks</li>
+  </ul>
+<p>No stored data is ever sold, shared, or used for advertising.</p>
+
+<span style="display:flex; margin: 25px auto; border-bottom:2.5px solid #242427;"></span>
+
+  <h3>4. Data Removal</h3>
+  <p>Users or server administrators may request data deletion at any time by opening a ticket in the support server. Upon verification, all associated data (server or user) will be removed. </p>
+
+<span style="display:flex; margin: 25px auto; border-bottom:2.5px solid #242427;"></span>
+
+  <h3>5. Automated Messages</h3>
+  <p>The Bot may send a private thank-you message when you vote. No other unsolicited DMs or advertisements are sent. </p>
+
+<span style="display:flex; margin: 25px auto; border-bottom:2.5px solid #242427;"></span>
+
+  <h3>6. Security</h3>
+  <p>Stored data is kept in a private discord server and not publicly accessible. While best efforts are made to secure data, no system is 100% risk-free, and usage is at your discretion. </p>
+
+<span style="display:flex; margin: 25px auto; border-bottom:2.5px solid #242427;"></span>
+
+  <h3>7. Changes to This Policy</h3>
+  <p>We may update this Privacy Policy at any time. Continued use of the bot means you accept the latest version.</p>
+
+</section>
+
+<footer>
+  <p><a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+  <p style="margin-top:25px">© 2025 JwngBot. All Rights Reserved.</p>
+  <a href="https://discord.gg/49S4nPakbF"> <img src="images/discord.png" style="width:20px"> </a> 
+  <a href="https://top.gg/bot/1373562741314551900/vote" style="margin-left:7px"> <img src="images/topgg.png" style="width:20px"> </a>
+</footer>
+
+<script>
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+
+function toggleLegacy() {
+  const submenu = document.getElementById("legacySubmenu");
+  submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
